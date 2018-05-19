@@ -42,11 +42,14 @@
     <p id="test">This is a paragraph</p>
     <script>
         $(document).ready(function () {
-            $("#test").click(function () {
-                alert("clicked with jQuery");
+            $("p.test").click(function () {
+            //    alert("clicked with jQuery");
+                $(this).hide();
             });
 
         })
+
+        //"#" for ID "." for class "p" for p-tag
 
         //jQuery version
 
