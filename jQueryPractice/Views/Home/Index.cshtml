@@ -35,23 +35,27 @@
 </div>*@
     <html>
 <head><title></title>
-        <script
-    src="~/Scripts/jquery-3.3.1.js"></script></head>
+
+    <script src="~/Scripts/jquery-3.3.1.js"></script>       </head>
 <body>
 
     <p id="test">This is a paragraph</p>
+    <script>
+        $(document).ready(function () {
+            $("#test").click(function () {
+                alert("clicked with jQuery");
+            });
 
+        })
+
+        //jQuery version
+
+        
+        //js version
+        //document.getElementById("test").onclick = function () {
+        //    alert("clicked");
+        //}
+    </script>
 </body>
 </html>
 
-<script>
-    document.getElementById("test").onclick = function () {
-        alert("clicked");
-    }
-
-
-    $("test").click(function () {
-        $(this).hide();
-    });
-
-</script>
